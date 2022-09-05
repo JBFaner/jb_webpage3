@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+body{   
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    
+    border: 0;
+    margin: 0;
+}
+
+/* Sticky Header */
+
+.Sticky {
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(1, 167, 181, 0.98);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+}
+
+.stickyTitle {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.stickyTitle a {
+    color: black;
+    font-weight: 750;
+}
+
+.stickyButton {
+    border-radius: 5px;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 0 0 10px rgb(25, 73, 77);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+.stickyButton:hover {
+    color: white;
+    background-color: rgb(67, 116, 190);
+    border: 1px solid rgba(33, 97, 194, 8);
+}
+
+.Sticky a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Main Header */
+
+header {
+    height: 100vh;
+    padding: 50px 20px 0;
+}
+
+header .header {
+    width: 960px;
+    margin: 0 auto; 
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.header p a{
+    color: rgb(0, 0, 0);
+
+}
+
+.click:hover {
+    color: white;
+    background-color: rgba(0, 102, 255, 0.664);
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header h1 {
+    font-weight: bold;
+}
+
+.header h3 {
+    font-size: 30px;
+    margin: 0 0 35px;
+    font-weight: 500;
+}
+
+
+.ButtonSign {
+    background-color: rgb(252, 227, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 218, 8);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.062);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: -1.5px;
+}
+
+.ButtonSign:hover {
+    color: white;
+    background-color: rgb(33, 97, 194);
+    border: 1px solid rgba(33, 97, 194, 8);
+}
+
+.header img {
+    width: 270px;
+}
+
+.imageH {
+    position: absolute;
+    top: 25%;
+    right: 10%;;
+    transform: rotate(-15deg);
+    z-index: -2;
+}
+
+.imageC {
+    position: absolute;
+    top: 43%;
+    right: 2.7%;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    background-color: rgb(4, 91, 141);
+    color: white;
+   
+}
+
+main .Html {
+    height: 100vh;
+    padding: 30px 20px 0;
+    border-top: 1.5px solid rgba(128, 128, 128, 0.521);
+}
+
+main .Css {
+    height: 100vh;
+    padding: 30px 20px 0;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.521);
+}
+
+.Html h2,
+.Css h2 {
+    display: flex;
+    justify-content: center;
+}
+
+main .para {
+    font-size: 22px;
+    padding-bottom: 0 10px 10px;
+}
+
+.ctto {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.562);
+}
+
+iframe {
+    width: 50%;
+}
+
+section {
+    height: 90vh;
+    padding: 70px 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+
+
+label {
+    display: block;
+}
+
+#SignUp h2 {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+#SignUp h4 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.inquire {
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+#textarea {
+    width: 100%;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px;
+}
+
+input,
+textarea {
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: rgb(4, 91, 141);
+    height: 100%;
+}
+
+ul {
+    padding-top: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+    .ButtonSign {
+        font-size: 25px;
+    }
+    .imageH {
+        position: absolute;
+        top: 50%;
+        right: 10%;;
+        transform: rotate(-15deg);
+        z-index: -2;
+        width: 200px;
+    }
+    .imageC {
+        position: absolute;
+        top: 68%;
+        right: 2.7%;
+        transform: rotate(10deg);
+        z-index: -1;
+        width: 200px;
+    }
+    .header h3 {
+        padding-right: 50%;
+    }
+    main .para {
+        font-size: 18px;
+    }
+    .Html .ccto,
+    .Css .ccto {
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    .header p {
+        font-size: 15px;
+    }
+    .ButtonSign {
+        font-size: 20px;
+    }
+    .imageH {
+        width: 180px;
+    }
+    .imageC {
+        width: 180px;
+    }
+    main .para {
+        font-size: 15px;
+    }
+}
